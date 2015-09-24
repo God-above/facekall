@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/root_common"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"  >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mail"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:drawableLeft="@drawable/back_click"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_contacts_back"/>
+
+        <Button
+            android:id="@+id/btn_contacts_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            android:layout_alignBaseline="@+id/btn_goto_add_friend"
+            android:layout_alignBottom="@+id/btn_goto_add_friend"
+            android:layout_toLeftOf="@+id/btn_goto_add_friend"
+            android:layout_toStartOf="@+id/btn_goto_add_friend"
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp"/>
+
+        <Button
+            android:id="@+id/btn_goto_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/add_friend"
+            android:layout_marginEnd="30dp"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_system_news"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:text="新朋友 +5"/>
+    <TextView
+        android:id="@+id/tv_remark_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:text="@string/remark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/list_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="#e0e0e0"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

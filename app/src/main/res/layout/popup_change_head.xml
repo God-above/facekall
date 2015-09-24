@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:id="@+id/tvPopHead"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:text="请选择图片来源"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_popup"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/tvPopHead"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_marginLeft="@dimen/login_tv_margin_left"
+        android:layout_marginRight="@dimen/login_tv_margin_left"
+      >
+
+        <Button
+            android:id="@+id/popHeadCamera"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/bg_popup_button"
+            android:textColor="@color/popup_button_text"
+            android:text="拍照"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"/>
+
+        <Button
+            android:id="@+id/popHeadGallery"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/bg_popup_button"
+            android:textColor="@color/popup_button_text"
+            android:text="系统图库"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

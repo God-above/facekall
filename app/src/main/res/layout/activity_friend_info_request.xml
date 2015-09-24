@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_top_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_normal">
+
+        <TextView
+            android:id="@+id/tv_friend_info_request_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_click"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:text="好友信息"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        >
+
+        <com.tencent.avsdk.view.CircleImageView
+            android:id="@+id/friend_info_request_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/icon_group"
+            />
+
+        <TextView
+            android:id="@+id/friend_info_request_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_info_request_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="用户名"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_frind_request_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="好友申请"/>
+
+    <TextView
+        android:id="@+id/tv_friend_info_invite_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_margin="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/pass_request"
+        android:textSize="21sp"/>
+
+</LinearLayout>

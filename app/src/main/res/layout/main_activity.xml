@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/qav_gaudio_bg" >
+
+    <RelativeLayout
+        android:id="@+id/av_video_layer_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SurfaceView
+            android:id="@+id/main_video_glview"
+            android:layout_toRightOf="@+id/rl_main_icon"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_main_icon"
+            android:layout_width="120dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <com.tencent.avsdk.view.CircleImageView
+                android:id="@+id/ic_peer_icon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:src="@drawable/ic_main_peer_icon">
+            </com.tencent.avsdk.view.CircleImageView>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/ic_peer_icon"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:text="5月18号上午7点30 45分钟 呼出"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/qav_switch_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/ic_ac_switch"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_center"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/av_video_layer_ui"
+        android:background="@android:color/black"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="通话总时长 :10:09:00"
+            />
+
+        <DigitalClock
+            android:id="@+id/dc_center_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_main_center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_main_bottom_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_main_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="8dp"
+            android:src="@drawable/dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="8dp"
+            android:src="@drawable/dot" />
+    </LinearLayout>
+
+</RelativeLayout>

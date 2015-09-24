@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <TextView
+        android:id="@+id/tvBackRegister"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/back_click"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar"
+        android:textColor="@color/login_text"
+        android:text="注册"/>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="@dimen/login_tv_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="请输入注册手机号"/>
+
+    <LinearLayout
+        android:id="@+id/llRegisterPhone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/login_tv_margin_left"
+        android:layout_marginRight="@dimen/login_tv_margin_left"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_input_login"
+        android:layout_height="@dimen/login_tv_height">
+
+        <TextView
+            android:layout_width="@dimen/login_input_left_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/login_text"
+            />
+
+        <EditText
+            android:id="@+id/etRegisterPhone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/login_tv_margin_left"
+        android:layout_marginRight="@dimen/login_tv_margin_left"
+        android:gravity="center"
+        android:layout_height="@dimen/login_tv_height"
+        android:text="注册"
+        android:onClick="onClick"
+        android:background="@drawable/login_button"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/login_tv_margin_left"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        </View>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:text="已有账号，去登陆" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:textColor="@color/white"
+        android:text="使用facekall，同意《facllkall使用条款和隐私政策》"/>
+
+
+</LinearLayout>

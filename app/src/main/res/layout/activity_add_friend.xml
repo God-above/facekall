@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/root_common"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@drawable/title_bar"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_addfriend_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/back_btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="onBack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友"
+            android:textColor="@color/white"
+            android:textSize="20.0sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_addfriend_back"
+            android:layout_toEndOf="@+id/btn_addfriend_back"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_search_user"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/editview_search_new_friend"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/account"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="16.0sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search_friend"
+            android:layout_width="46dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/editview_search_new_friend"
+            android:onClick="onSearchFriend"
+            android:text="查找"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_user_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/user_icon"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tv_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf ="@id/img_avatar"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:text="Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/editview_search_new_friend"
+            android:onClick="onAddFriend"
+            android:text="添加"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvFindFromMail"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="从通讯录中添加"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:drawableRight="@drawable/group_more"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvFindFromWeChat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="从微信好友中添加"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:drawableRight="@drawable/group_more"
+        android:textSize="22sp"/>
+
+</LinearLayout>

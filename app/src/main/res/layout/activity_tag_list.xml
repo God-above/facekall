@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_top_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_normal">
+
+        <TextView
+            android:id="@+id/tv_tag_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_click"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="标签"
+            />
+
+        <ImageView
+            android:id="@+id/ic_tag_list_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/skin_aio_more_pressed"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_remark_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

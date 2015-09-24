@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <com.tencent.av.opengl.ui.GLRootView
+        android:id="@+id/av_video_glview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <SurfaceView
+        android:id="@+id/av_video_surfaceView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/av_container"
+        android:layout_width="120dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/ac_icon_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_main_peer_icon" />
+
+        <ImageView
+            android:id="@+id/ac_icon_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_main_peer_icon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:text="Anna"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_av_signal"
+            android:scaleType="fitXY"
+            android:layout_weight="3"/>
+
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:format="00:%s"
+            android:background="@android:color/black"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

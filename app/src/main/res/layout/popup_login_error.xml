@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar"
+        android:gravity="center_vertical"
+        android:text="登录"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/back_btn"
+        android:textColor="@color/login_text"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPopTips"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_popup"
+        android:gravity="center"
+        android:text="您绑定的手机还能接受短信验证码吗?"
+        android:textColor="@color/login_text"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_below="@+id/tvPopTips"
+        android:layout_marginLeft="@dimen/login_tv_margin_left"
+        android:layout_marginRight="@dimen/login_tv_margin_left"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/popLoginPINYES"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@+id/popLoginPINNO"
+            android:layout_toStartOf="@+id/popLoginPINNO"
+            android:background="@drawable/bg_popup_button"
+            android:gravity="center"
+            android:text="可以"
+            android:textColor="@color/popup_button_text"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/popLoginPINNO"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:background="@drawable/bg_popup_button"
+            android:gravity="center"
+            android:text="不可以"
+            android:textColor="@color/popup_button_text"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

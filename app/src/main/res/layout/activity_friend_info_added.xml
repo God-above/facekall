@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_top_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_normal">
+
+        <TextView
+            android:id="@+id/tv_friend_info_added_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_click"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:text="好友信息"/>
+
+        <TextView
+            android:id="@+id/friend_info_added_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingRight="20dp"
+            android:text="更多"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <com.tencent.avsdk.view.CircleImageView
+            android:id="@+id/friend_info_added_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/icon_group"
+            />
+
+        <TextView
+            android:id="@+id/friend_info_added_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_info_added_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="用户名"/>
+
+        <TextView
+            android:id="@+id/friend_info_added_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_info_added_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="绑定手机"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_video_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_marginTop="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/user_info_added_button_padding"
+        android:text="@string/video_recent"
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/tv_message_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_marginTop="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/user_info_added_button_padding"
+        android:text="@string/message_recent"
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/tv_weeks_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_marginTop="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/user_info_added_button_padding"
+        android:text="@string/week_recent"
+        android:textSize="21sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_friend_info_invite_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_margin="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="视频通话"
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/tv_friend_info_invite_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_added_button_height"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:layout_marginRight="@dimen/user_info_added_button_margin"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="消息会话"
+        android:textSize="21sp"/>
+
+
+</LinearLayout>

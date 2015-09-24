@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.tencent.avsdk.view.CircleImageView
+        android:id="@+id/pic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="5dip"
+        android:src="@drawable/ic_main_peer_icon"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_top_height"
+        android:background="@color/gray_normal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="好友信息"
+            android:drawableLeft="@drawable/back_click"
+            android:drawablePadding="10dp"
+            android:onClick="onClick"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:id="@+id/friend_info_added_more"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/user_center_top_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:text="标签名"/>
+
+
+    <EditText
+        android:id="@+id/et_new_remark_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:layout_marginRight="@dimen/user_info_added_button_margin"
+        android:layout_height="@dimen/user_info_added_button_height"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:text="新标签"/>
+
+    <EditText
+        android:id="@+id/et_new_remark"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:layout_marginRight="@dimen/user_info_added_button_margin"
+        android:layout_height="@dimen/user_info_added_button_height"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_friend_info_tags"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:layout_marginRight="@dimen/user_info_added_button_margin"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/user_info_added_button_height">
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_friend_info_invite_message"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginLeft="@dimen/user_info_added_button_margin"
+        android:layout_marginRight="@dimen/user_info_added_button_margin"
+        android:text="@string/sure"
+        android:onClick="onClick"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:layout_height="@dimen/user_info_added_button_height"/>
+
+</LinearLayout>

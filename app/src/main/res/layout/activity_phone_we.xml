@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_login">
+
+    <TextView
+        android:id="@+id/phone_we_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar"
+        android:drawableLeft="@drawable/back_btn"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/str_back"
+        android:textColor="@color/login_text"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPopTips"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_popup"
+        android:gravity="center"
+        android:text="@string/call_400"
+        android:textColor="@color/login_text"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/call_400"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:onClick="onClick"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_button_login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/call_custrom"
+        android:layout_below="@+id/tvPopTips"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>
